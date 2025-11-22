@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><link rel="stylesheet" href="./css/style.css"></head>
+<body>
+    <main class="container">
+        <h2 style="margin-top: 2rem;">🏢 Seller Dashboard</h2>
+        <p>Welcome, Wholesaler! Manage your inventory and fulfill orders below.</p>
+
+        <section class="dashboard-tabs">
+            <button class="tab-btn active" data-tab="inventory">Inventory Management</button>
+            <button class="tab-btn" data-tab="orders">New Orders</button>
+        </section>
+
+        <div id="inventory-tab" class="tab-content active">
+            <h3>Manage Medicines</h3>
+            <button class="btn btn-secondary" id="show-add-medicine">Add New Medicine</button>
+            
+            <form id="add-medicine-form" class="form-container" style="display:none; max-width: 600px; margin-bottom: 2rem;">
+                <button type="submit" class="btn btn-primary">Save Medicine</button>
+            </form>
+            
+            <div id="seller-inventory-list">
+                <table class="order-table">
+                    </table>
+            </div>
+        </div>
+
+        <div id="orders-tab" class="tab-content">
+            <h3>Pending and Processing Orders</h3>
+            <div id="seller-orders-list">
+                </div>
+        </div>
+    </main>
+
+    <script type="module" src="js/seller.js"></script>
+    </body>
+</html>
